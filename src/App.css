@@ -15,4 +15,37 @@
     padding-top: 70px;
   }
 }
+.MovieList{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+  margin-left: 20px;
+}
+.Flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.form-control{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 600px;
+}
 
+
+.rate{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 3px;
+  }
+  .btn{
+    background-color: brown;
+    border: none;
+  }

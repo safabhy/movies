@@ -1,17 +1,13 @@
 import React, { useState } from "react";   
 
-function MovieCard() {
-    const [movieData, setMovieData] = useState({});
-    
-    const [title, setTitle] = useState("Batman Begins ")  
-    
-    const[posterUrl,setPosterUrl]=useState('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.telerama.fr%2Fcinema%2Ffilms%2Fbatman-begins%2C222779.php&psig=AOvVaw26O8nUf4VR2IVtZlaEwdbD&ust=1652528240433000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDQx8qx3PcCFQAAAAAdAAAAABAD')
-    const [description, setDescription] = useState("Batman Begins. de Christopher Nolan. Avec Christian Bale, Katie Holmes, Michael Caine ")  
+const MovieCard=({movie}) =>{
+ 
     return (
-        <div>
-            <h1>  {title} </h1>  
-            <img src={posterUrl} width={100} height={100}/>
-            <p>{description}</p>
+        <div >
+          <h1>{movie.title}</h1>
+            <img src={movie.PosterURL} width="180" height="180" alt="img"/>
+          <p>{movie.description}</p>
+          <p>{movie.rating}</p>
         </div>
     );
 };

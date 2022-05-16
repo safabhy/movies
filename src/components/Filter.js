@@ -1,9 +1,16 @@
 import React from 'react';
 
-function Filter() {
+const Filter = (props) =>{
+    const getsearch =(e) =>{
+        props.searchkey(e.target.value);
+    } 
     return (
-        <>
-        </>
+        <div>
+         <input
+				className='form-control'
+				onChange={getsearch}
+				placeholder='Type your search'></input>
+        </div>
     );
 }
 
